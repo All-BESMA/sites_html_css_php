@@ -1,0 +1,85 @@
+1-Install Git
+2-Check install with $ git --version
+3-First config 
+	$ git config --global user.name "Elayeche BOUCHAREB"
+	$ git config --global user.email "bcbeye@gmail.com"  
+4-Creat project $ mkdir landpage
+5-Cd landpage
+6-Initialize Git $ git init 
+7-git status
+
+8-Create index.html
+9-<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body style="background-color: turquoise;">
+    <h1 style="padding-top:20%; padding-bottom:20%; text-align: center;">Location de voitures anciennes</h1>
+</body>
+</html>  
+
+10-Etat du projet actuel "prendre photo projet":
+-Prendre une Selection des fichiers $ git add index.html
+-Enregistre $ git commit -m "project init"
+
+
+Prendre une autre photo couleur text blanc 
+
+<h1 style="padding-top:20%; padding-bottom:20%; text-align: center;color:#FFFFFF">Location de voitures anciennes</h1>
+ 
+Reselection $ git add index.html
+
+$ git commit -m "Modif color h1"
+
+chrono modif
+$ git log 
+
+BRANCHES copie du projet 
+create branch $ git branch backgroundColor
+list branches $ git branch
+* en vert => Actual branch 
+to change brach tape $ git checkout backgroundColor
+
+https://flatuicolors.com/ 
+
+<body style="background-color:silver;">
+
+select $ git add index.html
+commit $ git commit -m "background color to silver"
+
+BASCULEZ MODIF
+Aller branche recept
+$ git checkout main
+$ git merge backgroundColor
+$ git branch -d backgroundColor
+
+Collaboration :
+Depot distant
+diffuser le depot local au depot distant
+a travers GITHUB
+
+After create Account and repository
+$ git remote add origin git@github.com:All-BESMA/locationVoiture.git
+$ git remote
+
+depose ton projet
+$ git push origin main
+
+Les autres poersonnes in github add SETTING Manage ACCESS INVIT
+
+se branches pour travail sur mon projet
+$ git remote add URL repository
+
+$ git pull orign main
+
+-----conflits
+$ git revert code commit
+$ git reset --hard HEAD
+
+
+
+
